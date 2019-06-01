@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>[[*pagetitle]] - [[++site_name]]</title>
+    <base href="[[!++site_url]]" />
+    <meta charset="[[++modx_charset]]" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+</head>
+<body>
+
+<a href="http://www.modx.com" title="Modx" class="logo" target="_blank">MODX</a>
+
+<div class="container">
+    <section>
+        <h1>[[*longtitle:default=`[[*pagetitle]]`]]</h1>
+        [[*content]]
+    </section>
+
+    <div class="companies">
+        <h3>Test</h3>
+
+    </div>
+</div>
+<footer class="disclaimer">
+    <p>&copy; 2019 </p>
+</footer>
+
+<script>
+    // Load the Open Sans font
+    try {
+        document.addEventListener("DOMContentLoaded", function() { // prevent a Flash Of Unstyled Text (FOUT)
+            document.querySelector('head').innerHTML += "<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>";
+            document.body.classList.add('loaded');
+        });
+    } catch (e) { }
+
+
+
+</script>
+
+</body>
+</html>
